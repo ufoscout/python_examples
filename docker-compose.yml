@@ -1,0 +1,13 @@
+version: "3"
+
+services:
+
+  python:
+    image: "pypy:2"
+    #image: "python:2"
+    entrypoint: python /scripts/hello.py
+    volumes:
+    - ./001_HelloWorld:/scripts
+    ports:
+    - "8080:8080"
+ 
